@@ -31,7 +31,7 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    if (cstrcmp(argv[1], "-h") || cstrcmp(argv[1], "--version"))
+    if (cstrcmp(argv[1], "-h") || cstrcmp(argv[1], "--help"))
     {
         printf("alaman -h/--help\n");
         printf("alaman --version\n");

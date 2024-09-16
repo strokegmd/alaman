@@ -23,9 +23,11 @@ bin/alaman: bin/main.o bin/curlutil.o bin/strutil.o bin/packages.o
 	$(CC) $(LFLAGS) -o bin/alaman $^
 
 bin/%.o: src/%.c
+	@mkdir -p bin
 	$(CC) $(CFLAGS) $< -o $@
 
 bin/%.o: src/util/%.c
+	@mkdir -p bin
 	$(CC) $(CFLAGS) $< -o $@
 
 install: bin/alaman
